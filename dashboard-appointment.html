@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!--font awesome icons v4.7-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+
+  <!--css stylesheets-->
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>Dashboard-appointment | SPAC-TRX</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <button class="btn" id="toggle-menu"><i class="fa fa-align-right text-theme custom_icon"></i></button>
+    <div class="custom_options">
+      <button class="btn bell-icon"><i class="fa fa-bell text-theme custom_icon"></i></button>
+      <button class="btn profile-img"><img src="assets/img/profil-img.png" alt="profile img"></button>
+      <div class="custom_menu">
+        <ul>
+          <li>
+            <a href=":;">
+              <img src="assets/img/exit.png" alt="logout">
+              <span class="pl-3">logout</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+  </nav>
+
+
+  <aside class="main-sidebar">
+    <a href="index.html" class="brand-link">
+      <img src="assets/img/Group63.png" alt="brand_logo">
+      <span class="pl-2 logo_text">spac-trx</span>
+    </a>
+    <div class="sidebar">
+      <ul class="header-links">
+        <li>
+          <a href="dashboard.html">
+            <img src="assets/img/dashboard.png" alt="dashboard">
+            <span class="pl-4 custom_link">dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-profile.html">
+            <img src="assets/img/profile.png" alt="profile">
+            <span class="pl-4 custom_link">profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-patient.html">
+            <img src="assets/img/patient.png" alt="pateint">
+            <span class="pl-4 custom_link">my patient</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-appointment.html">
+            <img src="assets/img/appointment.png" alt="appointment">
+            <span class="pl-4 custom_link">appointment</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-payment.html">
+            <img src="assets/img/wallet.png" alt="wallet">
+            <span class="pl-4 custom_link">My payment</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h3 class="m-0 text-danger pb-3">Appointment</h3>
+    <div class="row">
+      <div class="col-12 col-md-4 py-2">
+        <select class="form-control">
+          <option value="all">All</option>
+          <option value="Today" selected>Today</option>
+          <option value="Tommorow">Tommorow</option>
+          <option value="Yesterday">Yesterday</option>
+          <option value="Last 7 month">Last 7 month</option>
+          <option value="Last 1 Month">Last 1 Month</option>
+          <option value="Lifetime">Lifetime</option>
+        </select>
+      </div>
+      <!--col close-->
+      <div class="col-12 col-md-4 py-2">
+        <select class="form-control">
+          <option value="Visiting Center" selected>Visiting Center 1</option>
+          <option value="Today">Chisel Dental</option>
+          <option value="orthodontic">Dental and orthodontic Clinic</option>
+          <option value="Dental">Dental De Care</option>
+        </select>
+      </div>
+      <!--col close-->
+    </div>
+    <!--row close-->
+
+    <div class="row pt-5">
+      <div class="col-12 col-xl-4 py-2">
+        <div class="card bg-card border-0 custom_rounded">
+          <div class="card-body">
+            <h3 class="text-theme m-0 pb-4 res_text">Appointment List</h3>
+            <ul class="appointment_list">
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-danger font-weight-bold">Ongoing</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-4 py-2">
+                  <p class="m-0 text-theme font-weight-bold">2.00pm</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--col close-->
+      <div class="col-12 col-xl-8 py-2">
+        <div class="row">
+          <div class="col-12 col-lg-4 py-3 py-md-3 py-lg-0">
+            <div class="card bg-light-blue border-0 custom_rounded">
+              <div class="card-body">
+                <div class="row align-items-center justify-content-center text-center">
+                  <div class="col-4">
+                    <i class="fa fa-user-md fa-3x"></i>
+                  </div>
+                  <!--col close-->
+                  <div class="col-8">
+                    <h3 class="m-0">22</h3>
+                    <p class="m-0">Appointments</p>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </div>
+            </div>
+          </div>
+          <!--col close-->
+          <div class="col-12 col-lg-4 py-3 py-md-3 py-lg-0">
+            <div class="card bg-coral border-0 custom_rounded">
+              <div class="card-body">
+                <div class="row align-items-center justify-content-center text-center">
+                  <div class="col-4">
+                    <i class="fa fa-bar-chart fa-3x"></i>
+                  </div>
+                  <!--col close-->
+                  <div class="col-8">
+                    <h3 class="m-0">$1800</h3>
+                    <p class="m-0">Revenue</p>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </div>
+            </div>
+          </div>
+          <!--col close-->
+          <div class="col-12 col-lg-4 py-3 py-md-3 py-lg-0">
+            <div class="card bg-light-purple border-0 custom_rounded">
+              <div class="card-body">
+                <div class="row align-items-center justify-content-center text-center">
+                  <div class="col-4">
+                    <i class="fa fa-user fa-3x"></i>
+                  </div>
+                  <!--col close-->
+                  <div class="col-8">
+                    <h3 class="m-0">8</h3>
+                    <p class="m-0">New Patients</p>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </div>
+            </div>
+          </div>
+          <!--col close-->
+        </div>
+        <!--row close-->
+        <div class="card bg-card border-0 custom_rounded mt-4">
+          <div class="card-body">
+            <h3 class="text-theme m-0 pb-4 res_text">Appointment Status</h3>
+            <ul class="appointment_list">
+              <li class="mb-3 row justify-content-between text-center">
+                <div class="col-12 col-md-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-clock-o text-coral custom_icon"></i></button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h5 class="text-theme m-0">Pending</h5>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h4 class="text-theme font-weight-bold">21</h4>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between text-center">
+                <div class="col-12 col-md-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-check-square text-success custom_icon"></i></button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h5 class="text-theme m-0">Accepted</h5>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h4 class="text-theme font-weight-bold">6</h4>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between text-center">
+                <div class="col-12 col-md-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-window-close text-danger custom_icon"></i></button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h5 class="text-theme m-0">Rejected</h5>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h4 class="text-theme font-weight-bold">4</h4>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between text-center">
+                <div class="col-12 col-md-3 py-2">
+                  <button type="button" class="btn"><i
+                      class="fa fa-calendar-check-o text-primary custom_icon"></i></button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h5 class="text-theme m-0">Completed</h5>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                  <h4 class="text-theme font-weight-bold">6</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card bg-card border-0 custom_rounded mt-4">
+          <div class="card-body">
+            <h3 class="text-theme m-0 pb-4 res_text">Appointment Request</h3>
+            <ul class="appointment_list">
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-window-close text-danger custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-check-square text-success custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-commenting text-theme custom_icon"></i></button>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-window-close text-danger custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-check-square text-success custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-commenting text-theme custom_icon"></i></button>
+                </div>
+              </li>
+              <li class="mb-3 row justify-content-between align-items-center text-center text-md-left">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3 py-2">
+                  <img src="assets/img/1a.jpg" class="img-fluid rounded-circle" alt="icon">
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5 py-2">
+                  <h5 class="text-theme m-0">Kelly theme</h5>
+                  <small>Common Health Checkup</small>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-3 py-2">
+                  <button type="button" class="btn"><i class="fa fa-window-close text-danger custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-check-square text-success custom_icon"></i></button>
+                  <button type="button" class="btn"><i class="fa fa-commenting text-theme custom_icon"></i></button>
+                </div>
+              </li>
+            </ul>
+            <p class="m-0"><a class="text-danger font-weight-bold" href=":;">See More</a></p>
+          </div>
+        </div>
+      </div>
+      <!--col close-->
+    </div>
+    <!--row close-->
+  </main>
+
+  <!--js-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</body>
+
+</html>

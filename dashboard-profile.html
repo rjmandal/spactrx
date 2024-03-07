@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!--font awesome icons v4.7-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+  <!--css stylesheets-->
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <title>Dashboard-profile | SPAC-TRX</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <button class="btn" id="toggle-menu"><i class="fa fa-align-right text-theme custom_icon"></i></button>
+    <div class="custom_options">
+      <button class="btn bell-icon"><i class="fa fa-bell text-theme custom_icon"></i></button>
+      <button class="btn profile-img"><img src="assets/img/profil-img.png" alt="profile img"></button>
+      <div class="custom_menu">
+        <ul>
+          <li>
+            <a href=":;">
+              <img src="assets/img/exit.png" alt="logout">
+              <span class="pl-3">logout</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+  </nav>
+
+
+  <aside class="main-sidebar">
+    <a href="index.html" class="brand-link">
+      <img src="assets/img/Group63.png" alt="brand_logo">
+      <span class="pl-2 logo_text">spac-trx</span>
+    </a>
+    <div class="sidebar">
+      <ul class="header-links">
+        <li>
+          <a href="dashboard.html">
+            <img src="assets/img/dashboard.png" alt="dashboard">
+            <span class="pl-4 custom_link">dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-profile.html">
+            <img src="assets/img/profile.png" alt="profile">
+            <span class="pl-4 custom_link">profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-patient.html">
+            <img src="assets/img/patient.png" alt="pateint">
+            <span class="pl-4 custom_link">my patient</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-appointment.html">
+            <img src="assets/img/appointment.png" alt="appointment">
+            <span class="pl-4 custom_link">appointment</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-payment.html">
+            <img src="assets/img/wallet.png" alt="wallet">
+            <span class="pl-4 custom_link">My payment</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h3 class="m-0 text-danger pb-3">Profile</h3>
+    <div class="row">
+      <div class="col-12 col-xl-8">
+        <div class="profile">
+          <div class="card bg-card border-0 custom_rounded">
+            <div class="card-body">
+              <div class="d-flex flex-column flex-md-row">
+                <div class="profiles-img">
+                  <img src="assets/img/1a.jpg" alt="profile img" class="img-fluid custom_rounded2">
+                </div>
+                <div class="profile-content pl-md-5">
+                  <h2 class="text-theme m-0 font-weight-bold">Carry Dom</h2>
+                  <h5 class="text-danger m-0 font-weight-bold pt-3">Anesthesiologist</h5>
+                  <h5 class="text-theme m-0 pt-3"><span class="font-weight-bold">Experience : </span><span>12 Years
+                      Overall</span></h5>
+                  <div class="d-flex align-items-center justify-content-sm-start justify-content-center pt-3 mt-1">
+                    <div>
+                      <i class="fa fa-star text-warning fa-2x"></i>
+                      <i class="fa fa-star text-warning fa-2x pl-1"></i>
+                      <i class="fa fa-star text-warning fa-2x pl-1"></i>
+                      <i class="fa fa-star text-warning fa-2x pl-1"></i>
+                      <i class="fa fa-star text-warning fa-2x"></i>
+                    </div>
+                    <div class="m-0 font-weight-bold pl-4 text-theme h4">
+                      5/5
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-sm-start justify-content-center pt-3">
+                    <div class="custom_badge">
+                      <img src="assets/img/verified.png" alt="badge" class="img-fluid">
+                    </div>
+                    <div class="text-theme font-weight-bold pl-4">
+                      Medical Registration Verified
+                    </div>
+                  </div>
+                  <h5 class="m-0 pt-3 text-uppercase text-theme">likes : <span
+                      class="text-danger font-weight-bold">(2410)</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--col close-->
+    </div>
+    <!--row close-->
+    <div class="card bg-card border-0 custom_rounded mt-5">
+      <div class="card-header bg-tranparent">
+        <button class="btn btn-danger float-right"><i class="fa fa-pencil-square-o"></i> Edit</button>
+      </div>
+      <div class="card-body">
+        <div class="custom_scroll">
+          <div class="card border-0">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Personel Details</h4>
+              <form action="#">
+                <div class="row pt-4">
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Carry">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Dom">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Carrydom@gmail.com">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="121-888-965">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 py-2">
+                    <div class="form-group">
+                      <textarea class="form-control bg-light" rows="5"
+                        placeholder="Hii, i am doctor. Carry will go along to thrive towards its goal of industry-leading and sustainability visions in the upcoming quater of the year.">&nbsp;</textarea>
+                    </div>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </form>
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Address Details</h4>
+              <form action="#">
+                <div class="row pt-4">
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="#1251">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="lan street">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Houstan">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="TEXAS">
+                    </div>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </form>
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Education</h4>
+              <form action="#">
+                <div class="row pt-4">
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Texas">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Houstan">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Medical College of Houstan">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="BDS">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Dental">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2 ">
+                    <div class="form-group">
+                      <button type="submit" class="btn bg-theme float-right">Add</button>
+                    </div>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </form>
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Experience</h4>
+              <form action="#">
+                <div class="row pt-4">
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Dental Clinic, Center">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Dentist">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="12/2/2012">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="26/6/2020">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 py-2">
+                    <div class="form-group">
+                      <button type="submit" class="btn bg-theme float-right">Add</button>
+                    </div>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </form>
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="text-theme m-0">Visiting Cennter/Hospital</h4>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Primary</label>
+                </div>
+              </div>
+              <form action="#">
+                <div class="row pt-4">
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="Dental Clinic, Center">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light"
+                        placeholder="410, CMR road 2nd block, off TEXAS, USA">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="150$">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 col-md-6 py-2">
+                    <div class="form-group">
+                      <input type="text" class="form-control bg-light" placeholder="10.00AM - 4.00PM">
+                    </div>
+                  </div>
+                  <!--col close-->
+                  <div class="col-12 py-2">
+                    <div class="form-group">
+                      <button type="submit" class="btn bg-theme float-right">Add</button>
+                    </div>
+                  </div>
+                  <!--col close-->
+                </div>
+                <!--row close-->
+              </form>
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Awards and Certificate</h4>
+              <div class="row pt-4">
+                <div class="col-12 col-md-3 py-2">
+                  <div class="award">
+                    <img src="assets/img/certi.webp" alt="certificate" class="img-fluid">
+                  </div>
+                  <p class="m-0 text-theme text-center">
+                    FICOI - 2009
+                  </p>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-3 py-2">
+                  <div class="award">
+                    <img src="assets/img/certi.webp" alt="certificate" class="img-fluid">
+                  </div>
+                  <p class="m-0 text-theme text-center">
+                    FICOI - 2009
+                  </p>
+                </div>
+                <!--col close-->
+                <div class="col-12 py-2">
+                  <div class="form-group">
+                    <button type="submit" class="btn bg-theme float-right">Add</button>
+                  </div>
+                </div>
+                <!--col close-->
+              </div>
+              <!--row close-->
+            </div>
+          </div>
+          <div class="card border-0 mt-5">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Services</h4>
+              <div class="row pt-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline1">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline1">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline2">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline3">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline3">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline4">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline4">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline5">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline5">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline6">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline6">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline7">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline7">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline8">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline8">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline9">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline9">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline12">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline12">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline13">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline13">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline34">
+                    <label class="custom-control-label text-theme font-weight-bold"
+                      for="customControlInline34">Cardiothoracic Anesthesia</label>
+                  </div>
+                </div>
+                <!--col close-->
+              </div>
+              <!--row close-->
+            </div>
+          </div>
+          <div class="card border-0 mt-5 mb-3">
+            <div class="card-body">
+              <h4 class="text-theme m-0">Average Rate</h4>
+              <div class="row pt-4">
+                <div class="col-12 col-lg-3">
+                  <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="50$">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">/ Appointment</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success float-right">Save</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--js-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</body>
+
+</html>
